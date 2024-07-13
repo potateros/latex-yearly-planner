@@ -70,7 +70,7 @@ func (d Day) Breadcrumb(prefix string, leaf string, shorten bool) string {
 	dayItem := header.NewTextItem(d.Time.Format(dayLayout)).RefText(d.Time.Format(time.RFC3339))
 	items := header.Items{
 		header.NewIntItem(d.Time.Year()),
-		header.NewTextItem("Q" + strconv.Itoa(int(math.Ceil(float64(d.Time.Month())/3.)))),
+		// header.NewTextItem("Q" + strconv.Itoa(int(math.Ceil(float64(d.Time.Month())/3.)))),
 		header.NewMonthItem(d.Time.Month()).Shorten(shorten),
 		header.NewTextItem("Week " + strconv.Itoa(wn)).RefPrefix(wpref),
 	}

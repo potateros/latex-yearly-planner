@@ -17,7 +17,7 @@ func Monthly(cfg config.Config, tpls []string) (page.Modules, error) {
 				Tpl: tpls[0],
 				Body: map[string]interface{}{
 					"Year":         year,
-					"Quarter":      quarter,
+					// "Quarter":      quarter,
 					"Month":        month,
 					"Breadcrumb":   month.Breadcrumb(),
 					"HeadingMOS":   month.HeadingMOS(),

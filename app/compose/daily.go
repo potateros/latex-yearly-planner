@@ -7,7 +7,7 @@ import (
 )
 
 var Daily = DailyStuff("", "")
-var DailyReflect = DailyStuff("Reflect", "Reflect")
+// var DailyReflect = DailyStuff("Reflect", "Reflect")
 var DailyNotes = DailyStuff("More", "Notes")
 
 func DailyStuff(prefix, leaf string) func(cfg config.Config, tpls []string) (page.Modules, error) {
@@ -28,7 +28,7 @@ func DailyStuff(prefix, leaf string) func(cfg config.Config, tpls []string) (pag
 							Tpl: tpls[0],
 							Body: map[string]interface{}{
 								"Year":         year,
-								"Quarter":      quarter,
+								// "Quarter":      quarter,
 								"Month":        month,
 								"Week":         week,
 								"Day":          day,

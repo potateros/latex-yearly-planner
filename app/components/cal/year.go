@@ -29,12 +29,12 @@ func NewYear(wd time.Weekday, year int) *Year {
 func (y Year) Breadcrumb() string {
 	return header.Items{
 		header.NewIntItem(y.Number).Ref(),
-		header.NewItemsGroup(
-			header.NewTextItem("Q1"),
-			header.NewTextItem("Q2"),
-			header.NewTextItem("Q3"),
-			header.NewTextItem("Q4"),
-		),
+		// header.NewItemsGroup(
+		// 	header.NewTextItem("Q1"),
+		// 	header.NewTextItem("Q2"),
+		// 	header.NewTextItem("Q3"),
+		// 	header.NewTextItem("Q4"),
+		// ),
 	}.Table(true)
 }
 

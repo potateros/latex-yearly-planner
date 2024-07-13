@@ -20,7 +20,7 @@ func NotesIndexed(cfg config.Config, tpls []string) (page.Modules, error) {
 				"Notes":        indexPage,
 				"Breadcrumb":   indexPage.Breadcrumb(cfg.Year, idx),
 				"HeadingMOS":   indexPage.HeadingMOS(idx+1, len(index.Pages)),
-				"SideQuarters": year.SideQuarters(0),
+				// "SideQuarters": year.SideQuarters(0),
 				"SideMonths":   year.SideMonths(0),
 				"Extra":        index.PrevNext(idx).WithTopRightCorner(cfg.ClearTopRightCorner),
 				"Extra2":       extra2(cfg.ClearTopRightCorner, false, true, nil, 0),
@@ -37,7 +37,7 @@ func NotesIndexed(cfg config.Config, tpls []string) (page.Modules, error) {
 					"Note":         nt,
 					"Breadcrumb":   nt.Breadcrumb(),
 					"HeadingMOS":   nt.HeadingMOS(idxPage),
-					"SideQuarters": year.SideQuarters(0),
+					// "SideQuarters": year.SideQuarters(0),
 					"SideMonths":   year.SideMonths(0),
 					"Extra": nt.
 						PrevNext(cfg.Layout.Numbers.NotesOnPage * cfg.Layout.Numbers.NotesIndexPages).

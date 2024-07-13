@@ -19,7 +19,7 @@ func Weekly(cfg config.Config, tpls []string) (page.Modules, error) {
 				"Week":         week,
 				"Breadcrumb":   week.Breadcrumb(),
 				"HeadingMOS":   week.HeadingMOS(),
-				"SideQuarters": year.SideQuarters(week.Quarters.Numbers()...),
+				// "SideQuarters": year.SideQuarters(week.Quarters.Numbers()...),
 				"SideMonths":   year.SideMonths(week.Months.Months()...),
 				"Extra":        week.PrevNext().WithTopRightCorner(cfg.ClearTopRightCorner),
 				"Extra2":       extra2(cfg.ClearTopRightCorner, false, false, nil, 0),

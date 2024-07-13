@@ -33,7 +33,7 @@ layout:
     dailydiarybest: 4
     dailydiarylog: 24
     todolinesintodopage: 10
-    notesindexpages: 3
+    # notesindexpages: 3
     notesonpage: 35
     dotheightfull: 36
     dotwidthfull: 30

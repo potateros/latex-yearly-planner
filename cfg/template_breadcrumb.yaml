@@ -11,11 +11,11 @@ pages:
         tpls:
           - breadcrumb_01_annual.tpl
 
-  - name: quarterly
-    renderblocks:
-      - funcname: quarterly
-        tpls:
-          - breadcrumb_02_quarterly.tpl
+  # - name: quarterly
+  #   renderblocks:
+  #     - funcname: quarterly
+  #       tpls:
+  #         - breadcrumb_02_quarterly.tpl
 
   - name: monthly
     renderblocks:
@@ -35,11 +35,11 @@ pages:
         tpls:
           - breadcrumb_05_daily.tpl
 
-  - name: daily_reflect
-    renderblocks:
-      - funcname: daily_reflect
-        tpls:
-          - breadcrumb_06_daily_reflect.tpl
+  # - name: daily_reflect
+  #   renderblocks:
+  #     - funcname: daily_reflect
+  #       tpls:
+  #         - breadcrumb_06_daily_reflect.tpl
 
   - name: daily_notes
     renderblocks:
@@ -47,9 +47,9 @@ pages:
         tpls:
           - breadcrumb_07_daily_notes.tpl
 
-  - name: notes_indexed
-    renderblocks:
-      - funcname: notes_indexed
-        tpls:
-          - breadcrumb_08_notes_index.tpl
-          - breadcrumb_09_notes.tpl
+  # - name: notes_indexed
+  #   renderblocks:
+  #     - funcname: notes_indexed
+  #       tpls:
+  #         - breadcrumb_08_notes_index.tpl
+  #         - breadcrumb_09_notes.tpl
